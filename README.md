@@ -2,7 +2,7 @@
 
 **36-slajdowa** prezentacja po polsku dla uczniów liceum przygotowujących się do matury rozszerzonej z fizyki. Kurs prowadzi od budowy atomu, nuklidów i doświadczeń historycznych przez oddziaływania, rozpady, aktywność i dawkę, aż po energię wiązania, rozszczepienie, fuzję, PET i inne zastosowania. Po przykładzie obliczeniowym następują wnioski, dodatek z pojęciami i wzorami oraz osobna bibliografia.
 
-Zawiera autorskie diagramy, lokalne fotografie historyczne z atrybucjami, suwaki składu nuklidu i okresów półtrwania, krótkie cytowania na slajdach oraz spis treści i pasek postępu powiązane z ich liczbą. Model atomu renderowany przez Three.js pokazuje przestrzenną chmurę prawdopodobieństwa elektronów zamiast orbit; zaznacza też, że jądro jest powiększone i nie zachowuje skali. Nie zawiera quizu. Projekt używa pełnoekranowej, kinowej palety granatu, ciepłej bieli i turkusu oraz nie pobiera zdalnych fontów ani obrazów.
+Zawiera autorskie diagramy, lokalne fotografie historyczne z atrybucjami, suwaki składu nuklidu i okresów półtrwania, krótkie cytowania na slajdach oraz spis treści i pasek postępu powiązane z ich liczbą. Animowany model Three.js pozwala przełączyć się między chmurą prawdopodobieństwa elektronu wodoru (stan 1s) a uproszczonym modelem z umowną orbitą; odróżnia pomiar położenia od poglądowej trajektorii i zaznacza, że jądro jest powiększone, nie w skali. Nie zawiera quizu. Projekt używa pełnoekranowej, kinowej palety granatu, ciepłej bieli i turkusu oraz nie pobiera zdalnych fontów ani obrazów.
 
 ## Uruchomienie
 

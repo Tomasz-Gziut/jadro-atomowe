@@ -5,6 +5,15 @@
   /** @type {HTMLDivElement} */
   let mount;
   let renderError = '';
+  let modelMode = 'quantum';
+  /** @type {(mode: string) => void} */
+  let updateModel = () => {};
+
+  /** @param {string} mode */
+  function selectModel(mode) {
+    modelMode = mode;
+    updateModel(mode);
+  }
 
   onMount(() => {
     let renderer;
@@ -19,7 +28,7 @@
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 40);
-    camera.position.set(0, 0, 9.5);
+    camera.position.set(0, 0, 8.2);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -57,26 +66,19 @@
       metalness: 0.08
     });
 
-    [
-      { x: -0.19, y: 0.2, z: 0.18, material: protonMaterial },
-      { x: 0.2, y: -0.19, z: 0.18, material: protonMaterial },
-      { x: 0.2, y: 0.2, z: -0.18, material: neutronMaterial },
-      { x: -0.19, y: -0.19, z: -0.18, material: neutronMaterial }
-    ].forEach(({ x, y, z, material }) => {
-      const nucleon = new THREE.Mesh(nucleonGeometry, material);
-      nucleon.position.set(x, y, z);
-      nucleons.add(nucleon);
-    });
+    const proton = new THREE.Mesh(nucleonGeometry, protonMaterial);
+    nucleons.add(proton);
 
-    const cloudCount = 22000;
+    const cloudCount = 18000;
     const cloudPositions = new Float32Array(cloudCount * 3);
     const cloudColors = new Float32Array(cloudCount * 3);
     const innerColor = new THREE.Color(0x90eee3);
     const outerColor = new THREE.Color(0x528cf0);
+    const bohrRadius = 1.1;
 
     for (let i = 0; i < cloudCount; i += 1) {
       const offset = i * 3;
-      const radius = -Math.log(Math.random() * Math.random() * Math.random()) * 0.35;
+      const radius = -Math.log(Math.random() * Math.random() * Math.random()) * bohrRadius / 2;
       const z = Math.random() * 2 - 1;
       const angle = Math.random() * Math.PI * 2;
       const spread = Math.sqrt(1 - z * z);
@@ -108,6 +110,36 @@
     );
     atom.add(cloud);
 
+    const electronMaterial = new THREE.MeshBasicMaterial({
+      color: 0xe7fff7,
+      transparent: true,
+      blending: THREE.AdditiveBlending
+    });
+    const electronGeometry = new THREE.SphereGeometry(0.075, 24, 16);
+    const electron = new THREE.Mesh(electronGeometry, electronMaterial);
+    const electronGlow = new THREE.PointLight(0x9bffe9, 2.2, 1.5);
+    electron.add(electronGlow);
+    atom.add(electron);
+
+    const orbitGroup = new THREE.Group();
+    orbitGroup.rotation.set(0.8, 0.2, -0.28);
+    const orbit = new THREE.Mesh(
+      new THREE.TorusGeometry(bohrRadius, 0.012, 8, 180),
+      new THREE.MeshBasicMaterial({ color: 0x7adfd6, transparent: true, opacity: 0.5 })
+    );
+    orbitGroup.add(orbit);
+    const orbitalElectron = new THREE.Mesh(electronGeometry.clone(), electronMaterial.clone());
+    orbitGroup.add(orbitalElectron);
+    atom.add(orbitGroup);
+
+    updateModel = (mode) => {
+      const isQuantum = mode === 'quantum';
+      cloud.visible = isQuantum;
+      electron.visible = isQuantum;
+      orbitGroup.visible = !isQuantum;
+    };
+    updateModel(modelMode);
+
     const resize = () => {
       const width = mount.clientWidth;
       const height = mount.clientHeight;
@@ -125,9 +157,32 @@
     /** @type {number | undefined} */
     let frameId;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let lastMeasurement = 0;
+    const setQuantumMeasurement = () => {
+      const radius = -Math.log(Math.random() * Math.random() * Math.random()) * bohrRadius / 2;
+      const z = Math.random() * 2 - 1;
+      const angle = Math.random() * Math.PI * 2;
+      const spread = Math.sqrt(1 - z * z);
+      electron.position.set(
+        radius * spread * Math.cos(angle),
+        radius * spread * Math.sin(angle),
+        radius * z
+      );
+    };
+    setQuantumMeasurement();
     const animate = () => {
+      const now = performance.now();
       atom.rotation.y += 0.0015;
-      atom.rotation.x = Math.sin(performance.now() * 0.00015) * 0.08;
+      atom.rotation.x = Math.sin(now * 0.00015) * 0.08;
+      if (now - lastMeasurement > 480) {
+        setQuantumMeasurement();
+        lastMeasurement = now;
+      }
+      orbitalElectron.position.set(
+        bohrRadius * Math.cos(now * 0.0012),
+        bohrRadius * Math.sin(now * 0.0012),
+        0
+      );
       renderer.render(scene, camera);
       frameId = window.requestAnimationFrame(animate);
     };
@@ -141,11 +196,18 @@
     return () => {
       if (frameId !== undefined) window.cancelAnimationFrame(frameId);
       resizeObserver.disconnect();
+      updateModel = () => {};
       cloudGeometry.dispose();
       cloud.material.dispose();
       nucleonGeometry.dispose();
       protonMaterial.dispose();
       neutronMaterial.dispose();
+      electron.geometry.dispose();
+      electron.material.dispose();
+      orbitalElectron.geometry.dispose();
+      orbitalElectron.material.dispose();
+      orbit.geometry.dispose();
+      orbit.material.dispose();
       renderer.dispose();
       renderer.domElement.remove();
     };
@@ -153,15 +215,27 @@
 </script>
 
 <div class="atom-visual">
+  <div class="model-switch" role="group" aria-label="Wybierz model atomu">
+    <button class:active={modelMode === 'quantum'} aria-pressed={modelMode === 'quantum'} onclick={() => selectModel('quantum')}>
+      Kwantowy · 1s
+    </button>
+    <button class:active={modelMode === 'illustrative'} aria-pressed={modelMode === 'illustrative'} onclick={() => selectModel('illustrative')}>
+      Poglądowy
+    </button>
+  </div>
   <div class="atom-canvas" bind:this={mount} aria-hidden="true"></div>
   <div class="atom-legend" aria-hidden="true">
-    <span><i class="electron-key"></i>chmura elektronowa</span>
-    <span><i class="proton-key"></i>proton</span>
-    <span><i class="neutron-key"></i>neutron</span>
+    <span><i class="electron-key"></i>{modelMode === 'quantum' ? 'prawdopodobieństwo elektronu' : 'umowna orbita elektronu'}</span>
+    <span><i class="proton-key"></i>proton · jądro wodoru</span>
   </div>
   <div class="atom-caption">
-    <p>Elektrony opisuje chmura prawdopodobieństwa, nie tory planet.</p>
-    <small>Model poglądowy · jądro powiększone, nie w skali</small>
+    {#if modelMode === 'quantum'}
+      <p>Wodór · stan 1s: chmura pokazuje, gdzie można wykryć elektron.</p>
+      <small>Punkt to przykładowy pomiar; jądro powiększone, nie w skali.</small>
+    {:else}
+      <p>Uproszczenie: elektron obiega proton po umownej orbicie.</p>
+      <small>Rzeczywisty elektron nie porusza się po takiej trajektorii.</small>
+    {/if}
   </div>
   {#if renderError}
     <p class="atom-error" role="status">{renderError}</p>
@@ -185,7 +259,40 @@
 
   .atom-canvas {
     position: absolute;
-    inset: 0 0 43px;
+    inset: 44px 0 57px;
+  }
+
+  .model-switch {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 4px;
+    padding: 3px;
+    border: 1px solid rgba(164, 210, 218, 0.2);
+    border-radius: 9px;
+    background: rgba(8, 21, 31, 0.72);
+  }
+
+  .model-switch button {
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #b7cbd0;
+    cursor: pointer;
+    font: 11px/1.2 system-ui, sans-serif;
+  }
+
+  .model-switch button.active {
+    background: #d6f1ed;
+    color: #10232b;
+  }
+
+  .model-switch button:focus-visible {
+    outline: 2px solid #90eee3;
+    outline-offset: 2px;
   }
 
   .atom-canvas :global(canvas) {
@@ -196,7 +303,7 @@
 
   .atom-legend {
     position: absolute;
-    top: 16px;
+    top: 64px;
     left: 18px;
     display: grid;
     gap: 8px;
@@ -219,8 +326,6 @@
   }
 
   .atom-legend .proton-key { background: #ff806d; }
-  .atom-legend .neutron-key { background: #65d8d1; }
-
   .atom-caption {
     position: absolute;
     right: 16px;
@@ -257,7 +362,10 @@
 
   @media (max-width: 620px) {
     .atom-visual { height: clamp(280px, 36svh, 390px); }
-    .atom-legend { top: 12px; left: 12px; gap: 6px; font-size: 10px; }
+    .model-switch { top: 8px; right: 8px; }
+    .model-switch button { padding: 6px 8px; font-size: 10px; }
+    .atom-canvas { inset: 42px 0 62px; }
+    .atom-legend { top: 52px; left: 12px; gap: 6px; font-size: 10px; }
     .atom-caption { right: 12px; bottom: 10px; left: 12px; align-items: flex-start; flex-direction: column; gap: 3px; }
     .atom-caption p { font-size: 11px; }
     .atom-caption small { text-align: left; }
