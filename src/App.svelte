@@ -401,7 +401,7 @@
       <div class="progress-fill" style={`width:${((active + 1) / slides.length) * 100}%`}></div>
       {#each slides as item, i}<button class:current={active === i} class="progress-point" style={`left:${(i / (slides.length - 1)) * 100}%`} onclick={() => goTo(i)} aria-label={`Przejdź do slajdu ${i + 1}: ${item.title}`} title={item.title}></button>{/each}
     </div>
-    <div class="footer-controls"><span class="footer-caption">Fizyka jądrowa · kurs maturalny</span><div class="nav-buttons"><button class="nav-arrow" onclick={previous} disabled={active === 0} aria-label="Poprzedni slajd">←</button><button class="nav-arrow" onclick={next} disabled={active === slides.length - 1} aria-label="Następny slajd">→</button></div></div>
+    <div class="footer-controls"><div class="nav-buttons"><button class="nav-arrow" onclick={previous} disabled={active === 0} aria-label="Poprzedni slajd">←</button><button class="nav-arrow" onclick={next} disabled={active === slides.length - 1} aria-label="Następny slajd">→</button></div></div>
   </footer>
 
   {#if fullscreenError}<div class="toast" role="status">{fullscreenError}</div>{/if}
