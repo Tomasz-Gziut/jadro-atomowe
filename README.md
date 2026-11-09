@@ -1,8 +1,10 @@
 # Jądro atomowe — prezentacja maturalna
 
-**17-slajdowa** prezentacja informacyjna po polsku o temacie 18.1 „Jądro atomowe”. Obejmuje skład atomu i jądra, nukleony, izotopy, liczby Z i A, doświadczenie Rutherforda, masę atomową, oddziaływania jądrowe, cząstki elementarne oraz antymaterię. Zawiera przykłady objaśniające pojęcia.
+**17-slajdowa** prezentacja po polsku o temacie 18.1 „Jądro atomowe”. Prowadzi od eksperymentu Geigera–Marsdena przez model jądra, izotopy oraz liczby Z i A do oddziaływań, mas atomowych i antymaterii. Każdy model oznacza, co przedstawia i gdzie zastosowano umowną skalę.
 
-Zawiera autorskie diagramy, rekonstrukcję aparatury Geigera–Marsdena z atrybucją, interaktywny zapis nuklidu oraz spis treści i pasek postępu powiązane z liczbą slajdów. Animowany model Three.js pozwala przełączyć się między chmurą prawdopodobieństwa elektronu wodoru (stan 1s) a uproszczonym modelem z umowną orbitą; wyjaśnia różnicę między pomiarem położenia i poglądową trajektorią. Treści fragmentu źródłowego streszczono własnymi słowami. Projekt używa pełnoekranowej, kinowej palety granatu, ciepłej bieli i turkusu oraz nie pobiera zdalnych fontów.
+Każdy slajd ma osobny diagram dopasowany do omawianej idei: od składu atomu helu i porównania cząstek po aparaturę Rutherforda, tory rozpraszania oraz kwarki w protonie i neutronie. Prezentacja zawiera też interaktywny zapis nuklidu oraz model Three.js wodoru w stanie 1s, pokazujący rozkład prawdopodobieństwa elektronu. Kolory protonów, neutronów i elektronów są stałe w całym materiale; promieniowanie alfa i kwarki mają osobne oznaczenia. Schemat izotopów wodoru pokazuje osobno protony, neutrony i elektrony. Nie przedstawia elektronów jako planet na orbitach i odróżnia pomiar od animacji widoku. Szkolne określenie nukleonów jako „cząstek elementarnych” zestawiono z ich współczesnym opisem jako cząstek złożonych z kwarków. Treści fragmentu podręcznika streszczono własnymi słowami.
+
+Szczegółowy skrypt prezentera z objaśnieniami pojęć, intencją wizualizacji, wskazówkami do prowadzenia każdego slajdu i typowymi nieporozumieniami znajduje się w pliku `skrypt-prezentera.txt` (około 15–18 minut).
 
 ## Uruchomienie
 
@@ -28,9 +30,4 @@ Uruchom polecenia z katalogu projektu. Otwórz `http://127.0.0.1:5173` w przegl�
 - OpenStax, *University Physics, Volume 3*: [10.1 Properties of Nuclei](https://openstax.org/books/university-physics-volume-3/pages/10-1-properties-of-nuclei).
 - NIST/CODATA, [Fundamental Physical Constants](https://www.nist.gov/pml/fundamental-physical-constants).
 - Nobel Prize biographical material: [Ernest Rutherford](https://www.nobelprize.org/prizes/chemistry/1908/rutherford/biographical/).
-
-## Ilustracje i atrybucje
-
-- Aparatura Geigera–Marsdena — współczesna rekonstrukcja CGI, nie oryginalne urządzenie ani fotografia z 1909 r.; Kurzon, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Geiger-Marsden_apparatus_2_CGI_mock-up.jpg).
-
-Rekonstrukcja jest dołączona lokalnie i nie wymaga połączenia z siecią podczas prezentacji. Atrybucja znajduje się na slajdzie o doświadczeniu i w bibliografii.
+- CERN, [The Standard Model](https://home.cern/science/physics/standard-model).

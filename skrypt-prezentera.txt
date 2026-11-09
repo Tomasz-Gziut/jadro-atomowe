@@ -1,0 +1,299 @@
+SKRYPT PREZENTERA
+18.1. Jądro atomowe
+
+Szacowany czas: 15–18 minut
+
+Jak korzystać ze skryptu
+Tekst kursywą w nawiasach kwadratowych to wskazówki, nie część wypowiedzi.
+Przy każdym slajdzie znajdziesz wyjaśnienie, po co jest jego wizualizacja,
+co warto na niej wskazać i jak uniknąć częstego nieporozumienia. Nie trzeba
+czytać punktów ze slajdu słowo w słowo — wykorzystaj poniższy tekst jako
+spójną opowieść. Symbole p, n, e oznaczają odpowiednio proton, neutron
+i elektron; Z to liczba protonów, A — liczba nukleonów, a N — liczba neutronów.
+
+01. ATOM JEST NIEMAL PUSTY. JĄDRO SKUPIA JEGO MASĘ.
+[Zacznij od schematu helu-4. Wskaż środkowe jądro, czerwone protony,
+turkusowe neutrony i jasne elektrony poza jądrem.]
+Atom ma niewielkie, dodatnio naładowane jądro oraz elektrony znajdujące się
+wokół niego. Protony i neutrony nazywamy nukleonami. Prawie cała masa atomu
+jest skupiona w jądrze, mimo że zajmuje ono tylko maleńką część rozmiaru atomu.
+Słowo „pusty” nie oznacza, że atom nie zawiera elektronów — oznacza, że nie jest
+wypełniony zwartą materią. Rysunek jest schematem całego obojętnego helu-4:
+jądro ma dwa protony i dwa neutrony, a atom ma dwa elektrony. Miękka poświata
+oznacza umowny obszar elektronów, nie ich dokładne położenia. Jądro,
+elektrony i ich odległości nie są pokazane w skali.
+
+02. ATOM SKŁADA SIĘ Z JĄDRA I ELEKTRONÓW
+[Wskaż legendę i przełącznik modeli. W widoku wodoru pokaż chmurę oraz punkt;
+potem krótko pokaż schemat helu i jego podpis.]
+Proton ma ładunek dodatni +e, elektron ujemny −e, a neutron nie ma ładunku.
+W atomie obojętnym protonów i elektronów jest tyle samo, dlatego ich ładunki
+się równoważą. Wodór w stanie 1s jest przykładem modelu kwantowego: chmura
+pokazuje, gdzie pomiar położenia elektronu jest bardziej prawdopodobny.
+Jaśniejsze i gęstsze obszary nie są ścieżką ruchu. Migający punkt ilustruje
+kolejny możliwy wynik pomiaru, a nie elektron krążący jak planeta.
+Hel-4 pokazuje z kolei skład jądra: dwa protony i dwa neutrony; obojętny atom
+helu ma także dwa elektrony. Ich położenie w schemacie jest rozdzielone dla
+czytelności, nie przedstawia orbit.
+
+03. NIEWIELKIE JĄDRO SKUPIA NIEMAL CAŁĄ MASĘ
+[Pokaż proporcje na schemacie: rozmiar atomu, jądra i napis „100 000×”.
+Nie sugeruj, że kropka w środku ma narysowany rozmiar w skali.]
+Typowy rozmiar atomu ma rząd 10⁻¹⁰ metra, a promień jądra — 10⁻¹⁵ metra.
+Stąd różnica około stu tysięcy razy w długości. Wizualizacja jest celowo
+powiększona i służy wyłącznie porównaniu rzędów wielkości. Jądro jest tak małe,
+że gdyby atom miał rozmiar dużego stadionu, jądro byłoby mniej więcej jak
+drobny punkt w jego środku. Mimo to skupia niemal całą masę, bo protony
+i neutrony są znacznie cięższe od elektronów.
+
+04. PROTONY I NEUTRONY TO NUKLEONY
+[Porównaj trzy osobne karty: proton, neutron, elektron. Wskaż ładunek i masę
+na każdej. Zwróć uwagę, że p i n są nukleonami w jądrze, a elektron jest poza nim.]
+Proton ma ładunek +e i masę około 1,6726 · 10⁻²⁷ kg. Neutron jest elektrycznie
+obojętny i ma masę około 1,6749 · 10⁻²⁷ kg. Są więc niemal tak samo ciężkie.
+Elektron jest około 1836 razy lżejszy od protonu. Dlatego elektrony mają mały
+udział w masie atomu, choć to one w dużej mierze decydują o jego chemii.
+Karty porównują ładunek i masę — rozmiary ikon są wyłącznie graficznymi
+znacznikami, nie odzwierciedlają fizycznych rozmiarów cząstek. Masa elektronu
+to około 9,109 · 10⁻³¹ kg, czyli około 1/1836 masy protonu. Z tego powodu
+proton i neutron odpowiadają za niemal całą masę atomu. Kolory są zgodne
+z pozostałymi schematami: proton czerwony, neutron turkusowy, elektron jasny
+z turkusową poświatą.
+
+05. IZOTOPY MAJĄ TYLE SAMO PROTONÓW, ALE RÓŻNĄ LICZBĘ NEUTRONÓW
+[Porównaj trzy schematy atomów wodoru. Wskaż duże, jasne e⁻ poza jądrem;
+potem policz składniki jąder: jeden proton oraz kolejno zero, jeden i dwa neutrony.]
+Izotopy to odmiany jednego pierwiastka. O tym, jaki to pierwiastek, decyduje
+liczba protonów, a nie neutronów. Każdy z trzech atomów obojętnych ma jeden
+elektron — stąd jasny znacznik e⁻ przy każdym jądrze — ale jądra różnią się
+liczbą neutronów. Każde z nich ma jeden proton, dlatego wszystkie są jądrami
+wodoru. Prot nie ma neutronu, deuter ma jeden, a tryt dwa. Oznaczenia ¹H, ²H
+i ³H podają liczbę masową: protony plus neutrony. Jasny znacznik elektronu
+jest czytelnie przesunięty względem jądra, nie pokazuje orbity; rozmiary atomu
+i jądra nie są w skali.
+W przyrodzie zdecydowanie dominuje prot; deuter stanowi około 0,015% wodoru,
+a tryt występuje śladowo. Prot i deuter są stabilne, natomiast tryt jest
+promieniotwórczy i z czasem samorzutnie się przemienia.
+
+06. IZOTOPY TEGO SAMEGO PIERWIASTKA MAJĄ PODOBNĄ CHEMIĘ
+[Wskaż w obu zapisach ¹²₆C i ¹⁴₆C jednakową liczbę 6 u dołu oraz jednakową
+liczbę elektronów. Odczytaj strzałkę prowadzącą do podobnych właściwości.]
+Węgiel-12 i węgiel-14 mają po sześć protonów, więc mają tę samą liczbę
+atomową Z i należą do tego samego pierwiastka. W atomie obojętnym każdy ma
+również sześć elektronów. To oznacza taki sam układ elektronów; zwłaszcza
+elektrony zewnętrzne, zwane walencyjnymi, zachowują się podobnie w reakcjach.
+Dlatego chemia izotopów jest prawie taka sama. „Prawie” jest istotne:
+różnica mas może powodować niewielkie różnice szybkości reakcji. Węgiel-12
+ma sześć neutronów, a węgiel-14 osiem. Węgiel-14 powstaje m.in. w atmosferze
+pod wpływem promieniowania kosmicznego i trafia do organizmów w obiegu węgla.
+Nazwa „izotop” oznacza „to samo miejsce”: odmiany pierwiastka mają to samo
+miejsce, czyli ten sam numer, w układzie okresowym.
+
+07. LICZBY ATOMOWA I MASOWA OPISUJĄ SKŁAD JĄDRA
+[Wskaż zapis węgla-14 i odczytaj najpierw górne A, potem dolne Z. Jeśli
+prezentujesz suwaki, ustaw Z = 6 i A = 14; pokaż, że zmiana A zmienia N.]
+Liczba atomowa Z, zapisana u dołu po lewej, mówi, ile protonów ma jądro,
+i określa pierwiastek. Liczba masowa A, u góry po lewej, to łączna liczba
+protonów i neutronów. Zatem neutronów jest N = A − Z. Dla ¹⁴₆C mamy
+14 − 6 = 8 neutronów, a ładunek jądra wynosi +6e. Suwaki to interaktywny
+pomocnik do odczytu zapisu: Z wybiera pierwiastek, a A nie może być mniejsze
+od Z, bo jądro nie może zawierać ujemnej liczby neutronów. A jest liczbą
+cząstek, nie pomiarem masy w jednostkach u.
+
+08. DOŚWIADCZENIE GEIGERA–MARSDENA
+[Poprowadź wzrokiem od złotego źródła alfa przez ołowianą osłonę i złotą folię
+Au do szaroniebieskiego ekranu. Animowane złote linie oznaczają tory alfa.]
+W tym doświadczeniu mówimy o rozpraszaniu cząstek alfa, nie o ich
+rozszczepianiu. Rozpraszanie oznacza zmianę kierunku lotu po oddziaływaniu;
+cząstka alfa pozostaje cała. Jest to jądro helu-4 — dwa protony i dwa
+neutrony związane w jednym jądrze — o ładunku +2e. Nie jest to atom helu
+ani cząsteczka chemiczna, bo nie ma elektronów. Poza jądrem, po dołączeniu
+dwóch elektronów, ta sama kombinacja czterech nukleonów jest jądrem atomu
+helu-4. Litera α jest nazwą historyczną jednego z rodzajów promieniowania
+emitowanego przez substancje promieniotwórcze; samo promieniowanie alfa
+jest strumieniem takich jąder, a nie światłem.
+
+Cząstki alfa uzyskano ze źródła promieniotwórczego. W rozpadzie alfa
+niestabilne, ciężkie jądro emituje związane dwa protony i dwa neutrony;
+jądro potomne ma o dwa protony i dwa neutrony mniej. Przykładem takiej
+przemiany jest ²²⁶Ra → ²²²Rn + ⁴He. To przykład wyjaśniający pochodzenie
+promieniowania alfa, a nie twierdzenie o konkretnym izotopie użytym
+w aparaturze na schemacie. W doświadczeniu źródło wysyłało cząstki,
+ołowiana osłona z wąskim otworem formowała wiązkę, a cienka folia złota
+stanowiła cel. Złoto można rozwałkować na bardzo cienką folię, więc cząstki
+mogły przejść przez nią i spotkać niewiele warstw atomów.
+
+Ekran scyntylacyjny świecił krótkim błyskiem, gdy trafiała w niego cząstka;
+badacze obserwowali błyski i ustalali kierunki, pod jakimi cząstki docierały.
+W 1909 roku Hans Geiger i Ernest Marsden zarejestrowali, że większość
+przechodzi prawie prosto, część odchyla się, a bardzo nieliczne zawracają.
+Ernest Rutherford przedstawił wyjaśnienie tych wyników w 1911 roku.
+Schemat pokazuje kolejność elementów, nie ich rzeczywiste wymiary ani liczbę
+cząstek. Animowane linie nie są zapisem pojedynczych pomiarów ani wykresem
+częstości. Nie nazywaj tego zjawiska rozszczepieniem alfa: rozszczepienie
+oznaczałoby podział jądra, a tutaj obserwujemy zmianę kierunku całej cząstki.
+
+09. SILNE ODCHYLENIA UJAWNIŁY MAŁE, DODATNIE JĄDRO
+[Wskaż osobny schemat trzech torów. Porównaj daleki przelot, bliskie minięcie
+i zawrócenie; podkreśl, że żółty tor to cząstka alfa, a czerwony środek — jądro złota.]
+Jądro folii złotej ma dodatni ładunek, a cząstka alfa także jest dodatnia,
+więc odpychają się siłą elektrostatyczną (Coulomba). Im bliżej cząstka
+przelatuje obok jądra, tym silniej zmienia się jej kierunek. Przy szczególnie
+bliskim minięciu tor może zawrócić. Nie jest to zderzenie z twardą powierzchnią
+ani podział cząstki alfa — działa siła na odległość. Większość cząstek
+przelatywała daleko od maleńkich jąder i dlatego prawie nie zmieniała toru.
+Rzadkie, duże odchylenia były zatem kluczową wskazówką, że dodatni ładunek
+nie jest równomiernie rozlany po całym atomie. Wynik doświadczenia
+wyjaśnia model, w którym dodatni ładunek i niemal cała masa są skupione w małym
+jądrze, a większość objętości atomu nie zawiera zwartej materii. Model atomu
+na slajdzie pomaga wskazać jądro; nie jest fotografią ani rekonstrukcją
+eksperymentu.
+
+10. LICZBA MASOWA TO NIE TO SAMO CO MASA ATOMOWA
+[Porównaj lewy zapis ¹²C, gdzie A = 12 jest liczbą całkowitą cząstek,
+z prawą wartością dla miedzi, podaną w u i ułamkową.]
+Liczba masowa A jest po prostu liczbą protonów i neutronów w jednym jądrze.
+Masa atomowa jest wielkością fizyczną. Jednostkę u zdefiniowano jako jedną
+dwunastą masy obojętnego atomu węgla-12; 1 u to około 1,6605 · 10⁻²⁷ kg.
+Rzeczywista masa nie jest dokładnie sumą całkowitych „jednostek” protonów
+i neutronów: znaczenie mają m.in. energia wiązania oraz elektrony. Wartość
+miedzi w układzie okresowym, około 63,55 u, jest średnią dla naturalnej
+mieszaniny jej izotopów. Dlatego nie musi być liczbą całkowitą.
+
+11. JĄDRO UTRZYMUJE ODDZIAŁYWANIE O KRÓTKIM ZASIĘGU
+[Najpierw pokaż parę proton–proton i podpis o odpychaniu; potem proton–neutron
+i opis przyciągania jądrowego. Zwróć uwagę na „kilka fm”.]
+Protony mają jednakowy dodatni ładunek, dlatego odpychają się elektrycznie.
+W jądrze działa też przyciągające oddziaływanie jądrowe między bliskimi
+nukleonami — protonami i neutronami. Jest ono krótkiego zasięgu, rzędu
+femtometrów; femtometr to 10⁻¹⁵ metra. Jest to resztkowy skutek
+oddziaływania silnego, które wiąże kwarki wewnątrz protonów i neutronów.
+Schemat porównuje rodzaje oddziaływań, nie pokazuje strzałek rzeczywistych
+sił ani torów cząstek. W dużych jądrach
+odpychanie wielu protonów utrudnia stabilność, ale nie każde duże jądro
+rozpada się z tego samego powodu ani w ten sam sposób.
+
+12. PROTON I NEUTRON SĄ CZĄSTKAMI ZŁOŻONYMI
+[Porównaj osobne diagramy protonu i neutronu. Wskaż literami u i d kwarki,
+a następnie dodaj podane przy nich ładunki; odczytaj podpis o gluonach.]
+W szkolnym opisie proton i neutron nazywa się składnikami jądra, czasem
+„cząstkami elementarnymi”. Współcześnie słowo „elementarna” oznacza cząstkę,
+której nie opisujemy jako złożonej z mniejszych składników. Proton i neutron
+nie są elementarne: to hadrony, czyli cząstki złożone z kwarków. Gluony
+przenoszą między kwarkami oddziaływanie silne, które je wiąże. Kwarki nie
+obserwuje się jako swobodnych cząstek. Elektron i neutrina to leptony,
+inna rodzina cząstek elementarnych; foton jest cząstką światła i nośnikiem
+oddziaływania elektromagnetycznego. Ten slajd doprecyzowuje język
+podręcznika. W diagramie proton ma dwa kwarki górne u oraz jeden dolny d.
+Każdy u ma ładunek +⅔e, a d −⅓e, zatem ⅔ + ⅔ − ⅓ = +1: proton ma ładunek
++e. Neutron ma jeden u i dwa d, więc ⅔ − ⅓ − ⅓ = 0. Kolory kwarków
+odróżniają ich typy w schemacie; nie należy mylić ich z kolorami protonów
+i neutronów w pozostałych ilustracjach ani z technicznym „ładunkiem koloru”
+w fizyce cząstek. Kwarki są związane i nie widać ich jako osobnych,
+swobodnych kulek.
+
+13. POZYTON JEST ANTYCZĄSTKĄ ELEKTRONU
+[Wskaż jasny elektron e⁻ i złoty pozyton e⁺, a następnie dwa fioletowe fotony
+γ po prawej. Złoty kolor oznacza tu antycząstkę, nie proton.
+Użyj słowa „może”, nie „zawsze”, mówiąc o przebiegu reakcji.]
+Pozyton ma taką samą masę jak elektron, ale przeciwny ładunek. Gdy elektron
+i pozyton spotkają się, mogą ulec anihilacji, czyli przemianie cząstki
+i antycząstki w inne cząstki. W przypadku pary w spoczynku
+powstają dwa przeciwbieżne fotony o energii 511 keV każdy. Dwa fotony
+pozwalają zachować pęd — jeden foton nie wystarczyłby w takim układzie.
+Foton γ jest kwantem promieniowania elektromagnetycznego; w fizyce jądrowej
+symbol γ oznacza foton o dowolnej energii. Energia nie znika; przechodzi
+w energię fotonów. Proces odwrotny, kreacja,
+może zajść, gdy wysokoenergetyczny foton w pobliżu jądra utworzy elektron
+i pozyton. Jądro pomaga zachować pęd, a foton musi dostarczyć co najmniej
+1,022 MeV na masy spoczynkowe pary oraz energię na odrzut.
+
+14. HEL MA W PRZYBLIŻENIU DWUKROTNIE WIĘKSZĄ GĘSTOŚĆ NIŻ WODÓR
+[Odczytaj H₂ i He jako rodzaje cząstek gazu. Przejdź po rachunku 4/2, potem
+porównaj go z wynikiem z tablic.]
+Wodór gazowy tworzą głównie dwuatomowe cząsteczki H₂ — każda składa się
+z dwóch atomów wodoru i ma masę około 2 u. Hel jest jednoatomowy, czyli
+występuje jako pojedyncze atomy, głównie hel-4, około 4 u na atom.
+W tej samej temperaturze i pod tym samym ciśnieniem taka sama objętość gazu
+zawiera tyle samo cząstek — to szkolne zastosowanie prawa Avogadra dla gazów.
+Gęstość oznacza masę przypadającą na daną objętość. Dlatego hel w tej
+objętości ma mniej więcej dwa razy większą masę, a więc i gęstość:
+4 podzielone przez 2. Dokładniejsze
+wartości z tablic dają 0,164/0,0823 ≈ 1,993. Różnica od 2 wynika z tego,
+że użyliśmy zaokrąglonych mas, a gazy nie są idealnymi punktami.
+
+15. MASA ATOMOWA CHLORU JEST ŚREDNIĄ WAŻONĄ
+[Najpierw pokaż długości pasków 76% i 24% — to udziały izotopów, nie masy.
+Następnie przeczytaj rachunek i wyjaśnij różnicę do 35,45 u.]
+Naturalny chlor składa się głównie z chloru-35 i chloru-37. W przybliżeniu
+76 atomów na 100 to chlor-35, a 24 na 100 — chlor-37. Średnią liczb masowych
+obliczamy, uwzględniając te udziały: 0,76 · 35 + 0,24 · 37 = 35,48.
+To średnia liczb masowych, a nie dokładna masa atomowa. Wartość tablicowa,
+około 35,45 u, jest nieco inna, ponieważ udziały są zaokrąglone, a rzeczywiste
+masy izotopów nie są równe dokładnie 35 u i 37 u.
+
+16. TRZY LICZBY PORZĄDKUJĄ OPIS JĄDRA
+[Przejdź wzrokiem przez mapę od protonów i neutronów, przez izotopy oraz
+zapis Z, A, aż do doświadczenia i oddziaływań.]
+Najważniejsza zasada: liczba protonów Z rozpoznaje pierwiastek. Liczba
+neutronów N może się zmieniać, a liczba masowa A jest sumą Z + N.
+Różne N oznacza różne izotopy tego samego pierwiastka. Doświadczenie
+rozpraszania cząstek alfa dostarczyło dowodów na małe, dodatnie jądro.
+Krótkiego zasięgu oddziaływanie jądrowe wiąże jego nukleony mimo odpychania
+elektrycznego protonów. Jeśli odbiorca zapamięta jedną zależność, niech będzie
+to N = A − Z.
+
+17. ŹRÓDŁA I MATERIAŁY UZUPEŁNIAJĄCE
+[Wspomnij, że odnośniki prowadzą do źródeł wykorzystanych do sprawdzenia
+faktów. Nie czytaj całej listy.]
+Podstawą jest wskazany fragment podręcznika do tematu 18.1. Dodatkowe źródła
+uzupełniają stałe fizyczne, opis jąder, historię doświadczenia Rutherforda
+i współczesną terminologię cząstek. Diagramy i modele są autorskimi pomocami
+dydaktycznymi, nie zdjęciami ani wynikami pomiaru.
+
+SŁOWNICZEK DLA PREZENTERA
+• Nukleon — proton lub neutron, czyli składnik jądra.
+• Izotopy — atomy jednego pierwiastka o tej samej liczbie protonów, lecz
+  różnej liczbie neutronów.
+• Stan 1s — najniższy stan energetyczny elektronu w atomie wodoru.
+• Chmura prawdopodobieństwa — graficzny obraz miejsc, w których pomiar
+  położenia elektronu jest bardziej lub mniej prawdopodobny; nie tor cząstki.
+• Ładunek elementarny e — wartość ładunku protonu; elektron ma ładunek −e.
+• Cząstka alfa — jądro helu-4, złożone z dwóch protonów i dwóch neutronów;
+  ma ładunek +2e. Poza jądrem nie jest atomem helu, bo nie ma elektronów.
+• Rozpad alfa — przemiana promieniotwórcza, w której niestabilne jądro
+  emituje cząstkę alfa. Jądro potomne ma o dwa protony i dwa neutrony mniej.
+• Rozpraszanie — zmiana kierunku cząstki wskutek oddziaływania; nie oznacza,
+  że cząstka pęka lub dzieli się.
+• Scyntylacja — krótki błysk światła wywołany przez cząstkę w odpowiednim
+  ekranie; pozwala wykryć miejsce jej trafienia.
+• Femtometr (fm) — 10⁻¹⁵ m, wygodna jednostka rozmiarów jądrowych.
+• Średnia ważona — średnia, w której każdy wynik liczy się proporcjonalnie
+  do tego, jak często występuje.
+• Hadron — cząstka złożona z kwarków; proton i neutron są hadronami.
+• Gluon — cząstka przenosząca oddziaływanie silne między kwarkami.
+• Energia wiązania — energia potrzebna do rozdzielenia związanych składników;
+  związana z nią masa układu jest mniejsza od sumy mas swobodnych składników.
+• Pęd — wielkość opisująca ruch cząstki; w reakcji całkowity pęd układu
+  jest zachowany, podobnie jak całkowita energia.
+• Prawo Avogadra — równe objętości gazów w tej samej temperaturze
+  i ciśnieniu zawierają w przybliżeniu tyle samo cząstek.
+• Gęstość — masa podzielona przez objętość; przy tej samej objętości
+  cięższa próbka ma większą gęstość.
+
+WAŻNE ROZRÓŻNIENIA
+1. A to liczba całkowita nukleonów w jądrze; masa atomowa jest mierzona
+   w u i dla pierwiastka naturalnego uwzględnia mieszaninę izotopów.
+2. Schemat jądra nie przedstawia nieruchomych kulek w ustalonych miejscach.
+   Kolory służą wyłącznie rozpoznaniu protonów i neutronów.
+3. Animacja elektronu nie pokazuje klasycznej orbity. Obracanie wizualizacji
+   to obrót widoku, a nie dowód na ruch po takim torze.
+4. W doświadczeniu Rutherforda cząstki alfa są oznaczone złotym kolorem,
+   bo są dodatnimi jądrami helu; odchylają się wskutek odpychania od
+   dodatniego jądra złota, a nie od twardej powierzchni.
+5. We wszystkich atomowych schematach proton jest czerwony, neutron
+   turkusowy, a elektron jasny z turkusową poświatą. Kolory są umowne,
+   ale ich znaczenie nie zmienia się między slajdami.
+
+Szacowany czas zakłada spokojne tempo i krótkie wskazania na schematach.
+Tekst jest parafrazą, nie cytatem.
