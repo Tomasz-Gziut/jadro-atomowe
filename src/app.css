@@ -592,3 +592,439 @@ h1 {
   .scattering-figure img { height: clamp(220px, 29vh, 320px); }
   .history-images img { height: clamp(125px, 18vh, 200px); }
 }
+
+/* Give the lesson's diagrams the space they need to read at presentation size. */
+@media (min-width: 901px) {
+  .slide {
+    padding: 14px clamp(24px, 3.2vw, 54px) 12px;
+  }
+  .slide-heading { margin-bottom: clamp(10px, 1.5vh, 16px); }
+  .heading-copy { max-width: 100%; }
+  h1 { max-width: 1120px; font-size: clamp(42px, 4.7vw, 68px); }
+  .lead { max-width: 780px; margin-top: 12px; font-size: clamp(16px, 1.15vw, 19px); }
+  .lesson-layout {
+    grid-template-columns: minmax(0, 1.7fr) minmax(300px, .85fr);
+    gap: clamp(18px, 2.4vw, 36px);
+  }
+  .visual-panel {
+    height: 100%;
+    min-height: clamp(380px, 47vh, 620px);
+    padding: 0 clamp(12px, 1.5vw, 24px) 10px 0;
+  }
+  .visual-body { padding: clamp(12px, 1.5vw, 22px) 8px; }
+  .point, .point:first-child { padding-block: 9px; }
+}
+
+.visual-body > * { max-width: 100%; }
+.visual-body small { font-size: 14px; line-height: 1.4; }
+.sketch-label { font-size: clamp(13px, 1vw, 17px); }
+.atom-sketch { width: min(100%, 760px); height: clamp(300px, 39vh, 500px); }
+.electron-orbit { width: clamp(220px, 23vw, 380px); height: clamp(140px, 16vw, 270px); }
+.orbit-b { width: clamp(240px, 25vw, 420px); height: clamp(160px, 18vw, 300px); }
+.atom-core { width: clamp(100px, 9vw, 148px); height: clamp(100px, 9vw, 148px); font-size: clamp(17px, 1.5vw, 24px); }
+.atom-electron { width: 16px; height: 16px; }
+.scale-sketch { max-width: 760px; grid-template-columns: minmax(0, 1.1fr) minmax(200px, .9fr); gap: clamp(20px, 3vw, 48px); }
+.scale-atom { width: min(100%, clamp(220px, 23vw, 360px)); }
+.scale-atom::after { font-size: 19px; }
+.scale-nucleus { width: 18px; height: 18px; }
+.scale-labels { gap: 16px; font-size: clamp(14px, 1.1vw, 18px); }
+.scale-labels b span { font-size: clamp(17px, 1.35vw, 22px); }
+.scale-labels i, .scale-labels small { font-size: clamp(14px, 1vw, 17px); }
+.particle-row { width: 100%; gap: clamp(18px, 4vw, 60px); }
+.particle { width: clamp(108px, 10vw, 160px); height: clamp(108px, 10vw, 160px); font-size: clamp(28px, 2.8vw, 42px); }
+.particle small { font-size: clamp(14px, 1vw, 17px); }
+.notation-demo { width: min(100%, 640px); }
+.nuclide { font-size: clamp(100px, 9vw, 142px); padding-left: 52px; }
+.nuclide sup, .nuclide sub { font-size: 22px; }
+.notation-key { gap: 12px; font-size: clamp(14px, 1vw, 17px); }
+.notation-key b { width: 25px; height: 25px; font-size: 15px; }
+.notation-demo label, .decay-chart label { font-size: 16px; }
+.notation-demo label { margin-top: 18px; }
+.isotope-compare { gap: clamp(10px, 1.5vw, 20px); }
+.isotope-compare strong { font-size: clamp(28px, 2.4vw, 38px); }
+.isotope-compare span { min-height: 34px; font-size: clamp(13px, 1vw, 16px); }
+.same-z { font-size: 14px; }
+.nucleus { width: 76px; height: 76px; gap: 4px; font-size: 12px; }
+.nucleus b { width: 28px; height: 28px; }
+.nucleus.tiny { width: 58px; height: 58px; }
+.family-board { max-width: 760px; }
+.family-equation { padding: 17px 8px; }
+.family-equation b { font-size: clamp(28px, 2.3vw, 36px); }
+.family-equation span { font-size: clamp(13px, 1vw, 16px); }
+.average { padding: 18px; font-size: 15px; }
+.average strong { font-size: 23px; }
+.average small { font-size: 14px; }
+.scattering-figure {
+  min-height: clamp(360px, 43vh, 540px);
+  padding: clamp(14px, 2vw, 26px);
+}
+.scattering-figure img {
+  width: 100%;
+  max-width: none;
+  height: clamp(280px, 38vh, 470px);
+  object-fit: contain;
+  object-position: center;
+}
+.scattering-figure p { font-size: clamp(14px, 1vw, 17px); }
+.scatter-paths { font-size: 15px; }
+.scatter-paths b { font-size: 13px; }
+.history-images { gap: clamp(8px, 1vw, 16px); }
+.history-images img { height: clamp(160px, 23vh, 280px); }
+.history-images figcaption { font-size: clamp(12px, .9vw, 15px); }
+.history-figure ol { font-size: clamp(14px, 1vw, 17px); }
+.history-figure ol b { font-size: clamp(16px, 1.15vw, 19px); }
+.history-figure > small { font-size: 14px; }
+.chadwick-diagram { height: clamp(320px, 40vh, 480px); }
+.target { width: clamp(92px, 9vw, 140px); height: clamp(92px, 9vw, 140px); font-size: clamp(24px, 2vw, 32px); }
+.beam { font-size: clamp(16px, 1.4vw, 21px); }
+.proton-track { font-size: clamp(20px, 1.7vw, 27px); }
+.measure { font-size: 15px; }
+.force-pair { gap: 12px; margin: 30px 20px; }
+.force-pair span { width: clamp(62px, 6vw, 92px); height: clamp(62px, 6vw, 92px); font-size: clamp(18px, 1.6vw, 25px); }
+.force-repel, .force-bind { max-width: 600px; margin: 16px auto; padding: 16px; font-size: clamp(15px, 1.15vw, 19px); }
+.range-scale { gap: 14px; margin-top: 34px; font-size: 15px; }
+.range-scale i { width: clamp(120px, 12vw, 190px); }
+.diagram-svg { width: 100%; max-width: 900px; max-height: none; }
+.diagram-svg text, .decay-chart svg text, .binding-curve svg text {
+  fill: #d7e1e3;
+  font-size: 20px !important;
+}
+.stability-chart .axis, .chart-axis { stroke-width: 2.4; }
+.stability-chart .grid, .chart-grid { stroke-width: 1.6; }
+.stability-chart .valley { stroke-width: 6; }
+.stability-chart .line-of-equal { stroke-width: 2; }
+.stability-chart circle { r: 8px; }
+.random-decay { max-width: 700px; gap: 24px; }
+.parent-nucleus, .daughter-nucleus { min-height: 124px; padding: 18px; font-size: clamp(17px, 1.35vw, 22px); }
+.random-dots { gap: 10px; padding-top: 28px; }
+.random-dots i { width: 15px; height: 15px; }
+.random-decay small { font-size: 15px; }
+.nuclear-equation { gap: clamp(16px, 2vw, 30px); font-size: clamp(30px, 2.6vw, 42px); }
+.balance-check { gap: clamp(22px, 3vw, 46px); margin: 34px 0 18px; padding: 16px; font-size: clamp(15px, 1.15vw, 19px); }
+.balance-visual small { font-size: 14px; }
+.decay-visual { min-height: 340px; gap: clamp(18px, 3vw, 44px); }
+.decay-parent { width: clamp(112px, 10vw, 160px); height: clamp(112px, 10vw, 160px); font-size: 50px; }
+.decay-products { gap: 14px; font-size: clamp(24px, 2vw, 32px); }
+.decay-products small { font-size: 17px; }
+.conversion, .alpha-cluster { bottom: 34px; font-size: 15px; }
+.energy-levels { width: min(100%, 720px); height: 360px; }
+.level { padding: 18px; border-bottom-width: 4px; }
+.level b { font-size: 28px; }
+.level span { font-size: 17px; }
+.photon { font-size: 27px; }
+.energy-levels > small { font-size: 15px; }
+.radiation-figure { max-width: 700px; }
+.field-label { font-size: 15px; }
+.radiation-row { grid-template-columns: 52px 1fr 52px; gap: 16px; padding: 19px 6px; }
+.radiation-row b { font-size: 23px; }
+.radiation-row small { font-size: 16px; }
+.ray { font-size: 28px; }
+.shields { gap: 10px; margin-top: 22px; }
+.shields span { padding: 9px 12px; font-size: 14px; }
+.radiation-figure > small { font-size: 14px; }
+.decay-chart, .binding-curve { width: 100%; max-width: 900px; }
+.chart-title { margin-bottom: 10px; font-size: 15px; }
+.decay-chart svg, .binding-curve svg { width: 100%; height: auto; max-height: none; }
+.decay-chart .decay-curve { stroke-width: 5; }
+.decay-chart .chart-cursor { stroke-width: 2; }
+.decay-chart .chart-point { r: 9px; }
+.decay-chart label { margin-top: 16px; }
+.c14-line { gap: 12px; padding: 14px 0; font-size: 15px; }
+.activity-diagram { max-width: 760px; }
+.activity-row { grid-template-columns: 1.1fr .75fr 1.3fr; gap: 12px; padding: 20px 8px; }
+.activity-row b, .activity-row span { font-size: clamp(17px, 1.4vw, 22px); }
+.activity-row small { font-size: clamp(14px, 1vw, 17px); }
+.unit-seal { margin-top: 22px; padding: 15px; font-size: clamp(18px, 1.5vw, 24px); }
+.dose-diagram { gap: clamp(10px, 1.5vw, 20px); }
+.dose-diagram > div { min-height: 190px; padding: 18px 12px; }
+.dose-diagram b { font-size: clamp(32px, 3vw, 48px); }
+.dose-diagram span { font-size: clamp(15px, 1.15vw, 19px); }
+.dose-diagram small { font-size: clamp(14px, 1vw, 17px); }
+.mass-diagram { gap: 22px; }
+.free-mass span { width: 64px; height: 64px; font-size: 20px; }
+.bound-mass { width: 130px; height: 130px; font-size: 34px; }
+.mass-diagram > b { font-size: 35px; }
+.mass-diagram > i { font-size: 22px; }
+.mass-diagram p { font-size: 17px; }
+.helium-work { width: min(100%, 760px); }
+.mass-line { padding: 17px 4px; font-size: clamp(17px, 1.3vw, 21px); }
+.mass-difference { margin-top: 18px; padding: 15px; font-size: clamp(19px, 1.5vw, 24px); }
+.energy-result { padding: 18px; font-size: clamp(23px, 2vw, 32px); }
+.helium-work > small { font-size: 15px; }
+.binding-curve p { margin: 10px 0 0; font-size: clamp(15px, 1.1vw, 18px); }
+.fission-diagram { min-height: 340px; gap: clamp(18px, 3vw, 44px); }
+.nucleus-large { width: clamp(130px, 13vw, 200px); height: clamp(130px, 13vw, 200px); font-size: clamp(24px, 2.2vw, 36px); }
+.reaction-arrow { font-size: 40px; }
+.fragments b { width: clamp(86px, 8vw, 125px); height: clamp(86px, 8vw, 125px); font-size: clamp(20px, 1.6vw, 26px); }
+.fragments small, .variable-products { font-size: 15px; }
+.chain-diagram { min-height: 350px; }
+.chain-node { width: clamp(115px, 11vw, 175px); height: clamp(115px, 11vw, 175px); font-size: clamp(18px, 1.5vw, 24px); }
+.chain-node.small-node { width: clamp(86px, 8vw, 125px); height: clamp(86px, 8vw, 125px); }
+.chain-arrows { font-size: 36px; }
+.chain-footer { font-size: clamp(14px, 1.05vw, 17px); }
+.fusion-diagram { min-height: 320px; gap: clamp(12px, 2vw, 28px); }
+.fusion-diagram > .deuterium, .fusion-diagram > .tritium, .fusion-diagram > .helium-product {
+  width: clamp(86px, 8vw, 130px);
+  height: clamp(86px, 8vw, 130px);
+  font-size: clamp(28px, 2.5vw, 40px);
+}
+.fusion-diagram > b, .fusion-diagram > i { font-size: 32px; }
+.fusion-diagram > span { font-size: clamp(17px, 1.4vw, 22px); }
+.fusion-diagram > small { flex-basis: 100%; font-size: 15px; }
+.pet-diagram { width: min(100%, 760px); }
+.annihilation-equation { font-size: clamp(22px, 2vw, 32px); }
+.photons { margin: 18px 0; font-size: clamp(18px, 1.5vw, 24px); }
+.pet-ring { width: clamp(150px, 14vw, 220px); height: clamp(150px, 14vw, 220px); }
+.pet-ring span { font-size: 14px; }
+.pet-diagram > small { font-size: 15px; }
+.application-map { gap: clamp(12px, 2vw, 28px); }
+.app-node { min-height: 140px; padding: 20px; }
+.app-node b { font-size: clamp(20px, 1.7vw, 27px); }
+.app-node span { font-size: clamp(15px, 1.2vw, 19px); }
+.worked-diagram { width: min(100%, 760px); gap: 12px; }
+.worked-step { min-height: 78px; padding: 14px; }
+.worked-step b { font-size: 17px; }
+.worked-step span { font-size: clamp(16px, 1.3vw, 21px); }
+.conclusion-map { width: 100%; max-width: 1000px; }
+.conclusion-map > div { min-height: 150px; padding: 18px; }
+.conclusion-map b { font-size: 21px; }
+.conclusion-map span { font-size: clamp(17px, 1.4vw, 22px); }
+.conclusion-map i { font-size: 25px; }
+.formula-sheet { max-width: 760px; }
+.formula-sheet p { gap: 10px; padding: 15px 0; }
+.formula-sheet b { font-size: 17px; }
+.formula-sheet span { font-size: clamp(22px, 1.8vw, 29px); }
+.reference-lead { gap: 14px; font-size: 18px; }
+.reference-lead b { font-size: 24px; }
+.reference-lead small { font-size: 15px; }
+.figure-credit { padding-top: 12px; font-size: 14px; }
+
+@media (max-width: 900px) {
+  .slide {
+    min-height: 100%;
+    padding: 22px clamp(20px, 4vw, 38px) 24px;
+    grid-template-rows: auto auto;
+  }
+  .slide-heading { margin-bottom: 14px; }
+  .heading-copy { max-width: 100%; }
+  h1 { font-size: clamp(38px, 6vw, 58px); }
+  .lead { max-width: 100%; font-size: clamp(17px, 2vw, 20px); }
+  .lesson-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .visual-panel {
+    height: auto;
+    min-height: 0;
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .visual-body {
+    width: 100%;
+    min-height: clamp(280px, 35svh, 360px);
+    padding: 14px 0;
+  }
+  .explanation-panel { padding-bottom: 14px; }
+  .scattering-figure { min-height: clamp(330px, 48svh, 500px); }
+  .scattering-figure img { height: clamp(270px, 42svh, 440px); }
+  .history-images img { height: clamp(160px, 24svh, 245px); }
+  .diagram-svg text, .decay-chart svg text, .binding-curve svg text { font-size: 22px !important; }
+  .references-slide .visual-panel { display: none; }
+}
+
+@media (max-width: 620px) {
+  .slide { padding: 18px 17px 24px; }
+  .slide-heading { margin-bottom: 12px; }
+  .eyebrow { font-size: 10px; }
+  h1 { font-size: clamp(35px, 9.5vw, 48px); line-height: 1.02; }
+  .hero-slide h1 { font-size: clamp(38px, 10.2vw, 52px); }
+  .lead, .hero-slide .lead { font-size: 17px; line-height: 1.45; }
+  .lesson-layout { gap: 14px; }
+  .visual-body { min-height: clamp(280px, 35svh, 360px); padding: 10px 0; }
+  .visual-label { padding: 9px 0; }
+  .atom-sketch { height: 330px; }
+  .electron-orbit { width: min(76vw, 310px); height: min(45vw, 190px); }
+  .orbit-b { width: min(82vw, 340px); height: min(51vw, 210px); }
+  .atom-core { width: 106px; height: 106px; font-size: 18px; }
+  .atom-electron { left: 18%; top: 24%; }
+  .sketch-label { font-size: 13px; }
+  .scale-sketch { grid-template-columns: minmax(0, .9fr) minmax(135px, 1.1fr); gap: 12px; }
+  .scale-atom { width: min(100%, 190px); }
+  .scale-labels { gap: 10px; font-size: 13px; }
+  .scale-labels b span { font-size: 15px; }
+  .scale-labels i, .scale-labels small { font-size: 12px; }
+  .particle-row { gap: 12px; }
+  .particle { width: clamp(88px, 26vw, 112px); height: clamp(88px, 26vw, 112px); font-size: 27px; }
+  .particle small { font-size: 12px; }
+  .nuclide { font-size: clamp(94px, 25vw, 118px); }
+  .nuclide sup, .nuclide sub { font-size: 19px; }
+  .notation-key { justify-content: flex-start; font-size: 12px; }
+  .notation-demo label { gap: 8px; font-size: 13px; }
+  .notation-demo output { text-align: right; }
+  .isotope-compare { gap: 5px; }
+  .isotope-compare strong { font-size: 24px; }
+  .isotope-compare span { font-size: 11px; }
+  .nucleus { width: 58px; height: 58px; gap: 3px; font-size: 10px; }
+  .nucleus b { width: 21px; height: 21px; }
+  .nucleus.tiny { width: 46px; height: 46px; }
+  .family-equation { gap: 5px; padding: 12px 2px; }
+  .family-equation b { font-size: clamp(23px, 7vw, 29px); }
+  .family-equation span { font-size: 11px; }
+  .average { padding: 12px; font-size: 13px; }
+  .average strong { font-size: 19px; }
+  .average small { font-size: 12px; }
+  .scattering-figure { min-height: clamp(300px, 46svh, 430px); padding: 10px; }
+  .scattering-figure img { height: clamp(240px, 39svh, 370px); }
+  .scatter-paths { inset: 34px 3% auto; font-size: 13px; }
+  .scatter-paths b { font-size: 11px; }
+  .scattering-figure p { font-size: 12px; text-align: center; }
+  .history-images { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .history-images figure:nth-child(3) { grid-column: 1 / -1; }
+  .history-images img { height: clamp(145px, 24svh, 215px); }
+  .history-images figcaption { font-size: 11px; }
+  .history-figure ol { gap: 5px; font-size: 11px; }
+  .history-figure ol b { font-size: 13px; }
+  .history-figure > small { font-size: 11px; }
+  .chadwick-diagram { height: 300px; }
+  .target { width: 78px; height: 78px; font-size: 21px; }
+  .beam { font-size: 13px; }
+  .proton-track { font-size: 17px; }
+  .measure { font-size: 12px; }
+  .force-pair { margin: 14px 6px 22px; gap: 8px; }
+  .force-pair span { width: 58px; height: 58px; font-size: 17px; }
+  .force-repel, .force-bind { margin: 12px auto; padding: 11px 6px; font-size: 13px; }
+  .range-scale { gap: 7px; margin-top: 20px; font-size: 11px; }
+  .range-scale i { width: 58px; }
+  .diagram-svg text, .decay-chart svg text, .binding-curve svg text { font-size: 24px !important; }
+  .random-decay { gap: 10px; }
+  .parent-nucleus, .daughter-nucleus { min-height: 92px; padding: 8px; font-size: 13px; }
+  .random-dots { gap: 7px; }
+  .random-dots i { width: 12px; height: 12px; }
+  .random-decay small { font-size: 12px; }
+  .nuclear-equation { gap: 8px; font-size: clamp(22px, 6vw, 29px); }
+  .balance-check { flex-direction: column; gap: 8px; margin: 18px 0 12px; padding: 10px; font-size: 13px; }
+  .balance-visual small { font-size: 11px; }
+  .decay-visual { min-height: 290px; gap: 10px; }
+  .decay-parent { width: 88px; height: 88px; font-size: 34px; }
+  .decay-products { gap: 8px; font-size: clamp(17px, 5vw, 23px); }
+  .decay-products small { font-size: 12px; }
+  .conversion, .alpha-cluster { bottom: 22px; font-size: 12px; }
+  .energy-levels { height: 290px; }
+  .level { gap: 9px; padding: 10px 6px; }
+  .level b { font-size: 21px; }
+  .level span { font-size: 13px; }
+  .photon { font-size: 21px; }
+  .energy-levels > small { font-size: 12px; }
+  .field-label { font-size: 12px; }
+  .radiation-row { grid-template-columns: 34px minmax(0, 1fr) 36px; gap: 8px; padding: 13px 3px; }
+  .radiation-row b { font-size: 18px; }
+  .radiation-row small { font-size: 12px; }
+  .ray { font-size: 22px; }
+  .shields { gap: 4px; margin-top: 12px; }
+  .shields span { padding: 6px 4px; font-size: 10px; text-align: center; }
+  .radiation-figure > small { font-size: 11px; }
+  .chart-title { font-size: 12px; }
+  .decay-chart label { align-items: flex-start; gap: 8px; font-size: 12px; }
+  .decay-chart output { text-align: right; }
+  .c14-line { font-size: 12px; }
+  .activity-row { grid-template-columns: 1fr .55fr 1.1fr; gap: 5px; padding: 14px 3px; }
+  .activity-row b, .activity-row span { font-size: 15px; }
+  .activity-row small { font-size: 11px; }
+  .unit-seal { margin-top: 14px; padding: 11px 5px; font-size: 17px; text-align: center; }
+  .dose-diagram { gap: 5px; }
+  .dose-diagram > div { min-height: 155px; padding: 10px 5px; }
+  .dose-diagram b { font-size: 29px; }
+  .dose-diagram span { font-size: 12px; }
+  .dose-diagram small { font-size: 11px; }
+  .mass-diagram { gap: 10px; }
+  .free-mass { gap: 4px; }
+  .free-mass span { width: 43px; height: 43px; font-size: 14px; }
+  .bound-mass { width: 90px; height: 90px; font-size: 25px; }
+  .mass-diagram > b { font-size: 26px; }
+  .mass-diagram > i { font-size: 17px; }
+  .mass-diagram p { font-size: 13px; }
+  .mass-line { gap: 8px; font-size: 13px; }
+  .mass-line b { text-align: right; }
+  .mass-difference { padding: 11px 6px; font-size: 17px; text-align: center; }
+  .energy-result { padding: 12px 6px; font-size: 22px; text-align: center; }
+  .helium-work > small { font-size: 12px; }
+  .binding-curve p { font-size: 12px; }
+  .fission-diagram { min-height: 280px; gap: 10px; }
+  .nucleus-large { width: 94px; height: 94px; font-size: 19px; }
+  .reaction-arrow { font-size: 28px; }
+  .fragments { gap: 5px; }
+  .fragments b { width: 62px; height: 62px; font-size: 16px; }
+  .fragments small, .variable-products { font-size: 11px; }
+  .variable-products { flex-basis: 100%; text-align: center; }
+  .chain-diagram { min-height: 290px; }
+  .chain-node { width: 90px; height: 90px; font-size: 14px; }
+  .chain-node.small-node { width: 70px; height: 70px; }
+  .chain-arrows { font-size: 26px; }
+  .chain-footer { font-size: 11px; }
+  .fusion-diagram { min-height: 270px; gap: 8px; }
+  .fusion-diagram > .deuterium, .fusion-diagram > .tritium, .fusion-diagram > .helium-product { width: 70px; height: 70px; font-size: 26px; }
+  .fusion-diagram > b, .fusion-diagram > i { font-size: 23px; }
+  .fusion-diagram > span { font-size: 14px; }
+  .fusion-diagram > small { font-size: 12px; text-align: center; }
+  .annihilation-equation { font-size: 19px; }
+  .photons { margin: 12px 0; font-size: 16px; }
+  .pet-ring { width: 132px; height: 132px; }
+  .pet-ring span { font-size: 11px; }
+  .pet-diagram > small { font-size: 12px; }
+  .application-map { gap: 8px; }
+  .app-node { min-height: 112px; padding: 10px 8px; }
+  .app-node b { font-size: 17px; }
+  .app-node span { font-size: 12px; }
+  .worked-diagram { gap: 7px; }
+  .worked-step { min-height: 64px; padding: 9px 6px; }
+  .worked-step b { font-size: 13px; }
+  .worked-step span { font-size: 13px; }
+  .conclusion-map { grid-template-columns: 1fr; gap: 3px; }
+  .conclusion-map > div { grid-template-columns: 34px 1fr; align-items: center; min-height: 54px; gap: 9px; padding: 9px 4px; }
+  .conclusion-map i { transform: rotate(90deg); justify-self: center; line-height: 1; }
+  .conclusion-map span { font-size: 15px; }
+  .formula-sheet p { padding: 11px 0; }
+  .formula-sheet b { font-size: 13px; }
+  .formula-sheet span { font-size: 18px; }
+  .reference-lead { gap: 10px; font-size: 14px; }
+  .reference-lead b { font-size: 19px; }
+  .reference-lead small { font-size: 12px; }
+  .figure-credit { font-size: 11px; }
+}
+
+.visual-body > :first-child {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 620px) {
+  .isotope-compare { row-gap: 22px; }
+  .isotope-compare strong { font-size: 28px; }
+  .isotope-compare span { min-height: 38px; font-size: 12px; }
+  .nucleus { width: 66px; height: 66px; gap: 4px; font-size: 11px; }
+  .nucleus b { width: 24px; height: 24px; }
+  .nucleus.tiny { width: 52px; height: 52px; }
+  .particle { width: clamp(92px, calc((100vw - 70px) / 3), 114px); height: clamp(92px, calc((100vw - 70px) / 3), 114px); }
+  .force-pair span { width: 70px; height: 70px; font-size: 19px; }
+  .force-repel, .force-bind { padding-block: 15px; font-size: 14px; }
+  .range-scale { font-size: 12px; }
+  .range-scale i { width: 72px; }
+  .dose-diagram > div { min-height: 178px; padding: 11px 6px; }
+  .dose-diagram b { font-size: 32px; }
+  .dose-diagram span { font-size: 13px; }
+  .dose-diagram small { font-size: 12px; }
+  .free-mass { width: 120px; gap: 7px; }
+  .free-mass span { width: 54px; height: 54px; font-size: 17px; }
+  .bound-mass { width: 108px; height: 108px; font-size: 28px; }
+  .mass-diagram { grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr); gap: 12px; }
+  .mass-diagram > b { font-size: 30px; }
+  .mass-diagram > i { font-size: 20px; }
+  .mass-diagram p { font-size: 14px; text-align: center; }
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .stability-chart .stability-y-label {
+    font-size: 15px !important;
+    transform-box: view-box;
+    transform-origin: 0 0;
+    transform: translate(22px, 225px) rotate(-90deg);
+  }
+}
