@@ -1,4 +1,5 @@
 <script>
+  import AtomModel from './AtomModel.svelte';
   import becquerelPortrait from './assets/history/becquerel.jpg';
   import geigerMarsdenReconstruction from './assets/history/geiger-marsden-reconstruction.jpg';
   import munsterGroup from './assets/history/munster-1932.jpg';
@@ -308,13 +309,9 @@
           <figcaption class="visual-label"><span>Wizualizacja</span></figcaption>
           <div class="visual-body">
             {#if slide.visual === 'hero' || slide.visual === 'atom'}
-              <div class="atom-sketch">
-                <div class="electron-orbit orbit-a"></div><div class="electron-orbit orbit-b"></div>
-                <div class="atom-electron"></div><div class="atom-core"><span>p⁺</span><span>n⁰</span><span>n⁰</span><span>p⁺</span></div>
-                <span class="sketch-label core-label">jądro · protony i neutrony</span><span class="sketch-label electron-label">elektrony</span>
-              </div>
+              <AtomModel />
             {:else if slide.visual === 'scale'}
-              <div class="scale-sketch"><div class="scale-atom"><div class="scale-nucleus"></div></div><div class="scale-labels"><b>ATOM <span>≈ 10⁻¹⁰ m</span></b><i>Promień ≈ 100 000 × większy</i><b>JĄDRO <span>≈ 10⁻¹⁵ m</span></b><small>R ≈ 1,2 fm · A^(1/3)</small></div></div>
+              <div class="scale-sketch"><div class="scale-atom" aria-hidden="true"><div class="scale-cloud"></div><div class="scale-nucleus"></div></div><div class="scale-labels"><b>ATOM <span>≈ 10⁻¹⁰ m</span></b><i>Promień ≈ 100 000 × większy</i><b>JĄDRO <span>≈ 10⁻¹⁵ m</span></b><small>Chmura elektronowa · jądro powiększone</small><small>R ≈ 1,2 fm · A^(1/3)</small></div></div>
             {:else if slide.visual === 'nucleons'}
               <div class="particle-row"><div class="particle proton">p⁺<small>proton</small></div><div class="particle neutron">n⁰<small>neutron</small></div><div class="particle electron">e⁻<small>elektron</small></div></div>
             {:else if slide.visual === 'notation'}
