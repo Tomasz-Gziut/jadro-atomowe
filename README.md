@@ -1,8 +1,8 @@
 # Jądro atomowe — prezentacja maturalna
 
-**36-slajdowa** prezentacja po polsku dla uczniów liceum przygotowujących się do matury rozszerzonej z fizyki. Kurs prowadzi od budowy atomu, nuklidów i doświadczeń historycznych przez oddziaływania, rozpady, aktywność i dawkę, aż po energię wiązania, rozszczepienie, fuzję, PET i inne zastosowania. Po przykładzie obliczeniowym następują wnioski, dodatek z pojęciami i wzorami oraz osobna bibliografia.
+**17-slajdowa** prezentacja informacyjna po polsku o temacie 18.1 „Jądro atomowe”. Obejmuje skład atomu i jądra, nukleony, izotopy, liczby Z i A, doświadczenie Rutherforda, masę atomową, oddziaływania jądrowe, cząstki elementarne oraz antymaterię. Zawiera przykłady objaśniające pojęcia.
 
-Zawiera autorskie diagramy, lokalne fotografie historyczne z atrybucjami, suwaki składu nuklidu i okresów półtrwania, krótkie cytowania na slajdach oraz spis treści i pasek postępu powiązane z ich liczbą. Animowany model Three.js pozwala przełączyć się między chmurą prawdopodobieństwa elektronu wodoru (stan 1s) a uproszczonym modelem z umowną orbitą; odróżnia pomiar położenia od poglądowej trajektorii i zaznacza, że jądro jest powiększone, nie w skali. Nie zawiera quizu. Projekt używa pełnoekranowej, kinowej palety granatu, ciepłej bieli i turkusu oraz nie pobiera zdalnych fontów ani obrazów.
+Zawiera autorskie diagramy, rekonstrukcję aparatury Geigera–Marsdena z atrybucją, interaktywny zapis nuklidu oraz spis treści i pasek postępu powiązane z liczbą slajdów. Animowany model Three.js pozwala przełączyć się między chmurą prawdopodobieństwa elektronu wodoru (stan 1s) a uproszczonym modelem z umowną orbitą; wyjaśnia różnicę między pomiarem położenia i poglądową trajektorią. Treści fragmentu źródłowego streszczono własnymi słowami. Projekt używa pełnoekranowej, kinowej palety granatu, ciepłej bieli i turkusu oraz nie pobiera zdalnych fontów.
 
 ## Uruchomienie
 
@@ -20,19 +20,17 @@ Uruchom polecenia z katalogu projektu. Otwórz `http://127.0.0.1:5173` w przegl�
 - `←` / `→` lub spacja — poprzedni / następny slajd; `Home` / `End` — początek / koniec.
 - Przyciski nawigacji, spis treści oraz gest przesunięcia w lewo/prawo na ekranie dotykowym.
 - `F` lub przycisk pełnego ekranu — przełączenie prezentacji; `Esc` zamyka spis treści.
-- Suwaki służą do zmiany składu nuklidu i upływu okresów półtrwania.
+- Suwaki pozwalają zmieniać liczbę protonów i nukleonów w przykładzie zapisu izotopu.
 
 ## Źródła merytoryczne
 
-- OpenStax, *University Physics, Volume 3*: [10.1 Properties of Nuclei](https://openstax.org/books/university-physics-volume-3/pages/10-1-properties-of-nuclei), [10.2 Nuclear Binding Energy](https://openstax.org/books/university-physics-volume-3/pages/10-2-nuclear-binding-energy), [10.3 Radioactive Decay](https://openstax.org/books/university-physics-volume-3/pages/10-3-radioactive-decay), [10.4 Nuclear Reactions](https://openstax.org/books/university-physics-volume-3/pages/10-4-nuclear-reactions), [10.5 Fission](https://openstax.org/books/university-physics-volume-3/pages/10-5-fission), [10.6 Nuclear Fusion](https://openstax.org/books/university-physics-volume-3/pages/10-6-nuclear-fusion), [10.7 Medical Applications and Biological Effects](https://openstax.org/books/university-physics-volume-3/pages/10-7-medical-applications-and-biological-effects-of-nuclear-radiation).
+- Podstawa zakresu: przekazany fragment podręcznika, §18.1 „Jądro atomowe”.
+- OpenStax, *University Physics, Volume 3*: [10.1 Properties of Nuclei](https://openstax.org/books/university-physics-volume-3/pages/10-1-properties-of-nuclei).
 - NIST/CODATA, [Fundamental Physical Constants](https://www.nist.gov/pml/fundamental-physical-constants).
-- Nobel Prize biographical material: [Henri Becquerel](https://www.nobelprize.org/prizes/physics/1903/becquerel/biographical/), [Ernest Rutherford](https://www.nobelprize.org/prizes/chemistry/1908/rutherford/biographical/), [James Chadwick](https://www.nobelprize.org/prizes/physics/1935/chadwick/biographical/).
+- Nobel Prize biographical material: [Ernest Rutherford](https://www.nobelprize.org/prizes/chemistry/1908/rutherford/biographical/).
 
-## Lokalne zdjęcia i atrybucje
+## Ilustracje i atrybucje
 
-- Henri Becquerel — portret Paula Nadara (ok. 1890–1908), domena publiczna: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paul_Nadar_-_Henri_Becquerel.jpg).
-- Ernest Rutherford — Smithsonian Institution Libraries / Wikimedia Commons, „No known copyright restrictions”: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Portrait_of_Ernest_Rutherford_(1871-1937),_Physicist_and_Chemist_(2551070939).jpg).
 - Aparatura Geigera–Marsdena — współczesna rekonstrukcja CGI, nie oryginalne urządzenie ani fotografia z 1909 r.; Kurzon, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Geiger-Marsden_apparatus_2_CGI_mock-up.jpg).
-- Zjazd naukowców w Münster (1932) — fotografia grupowa, na której są m.in. James Chadwick i Ernest Rutherford; US Department of Energy, domena publiczna: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bunsentagung_1932_Münster.jpg). To nie jest fotografia doświadczenia Chadwicka.
 
-Pliki zdjęć znajdują się w `src/assets/history/` i są dołączone lokalnie; nie wymagają połączenia z siecią podczas prezentacji. Atrybucje są zachowane na slajdach historycznych i w ostatnim slajdzie bibliografii.
+Rekonstrukcja jest dołączona lokalnie i nie wymaga połączenia z siecią podczas prezentacji. Atrybucja znajduje się na slajdzie o doświadczeniu i w bibliografii.

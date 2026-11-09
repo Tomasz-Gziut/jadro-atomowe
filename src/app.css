@@ -89,7 +89,22 @@ h1 { max-width: 950px; margin: 11px 0 0; color: var(--ink); font: 600 clamp(38px
 .notation-demo { width: min(100%, 410px); }.nuclide { position: relative; width: fit-content; margin: 0 auto 15px; padding-left: 42px; color: var(--ink); font: 600 86px/.9 var(--serif); }.nuclide sup,.nuclide sub { position: absolute; left: 0; color: var(--red); font: 17px var(--mono); }.nuclide sup { top: 2px; }.nuclide sub { bottom: 2px; color: var(--teal); }
 .notation-key { display: flex; justify-content: space-between; gap: 8px; padding: 10px 0; border-block: 1px solid var(--rule); color: var(--muted); font-size: 10px; }.notation-key b { display: inline-grid; place-items: center; width: 19px; height: 19px; margin-right: 4px; border: 1px solid var(--red); color: var(--red); font: 11px var(--mono); }
 .notation-demo label,.decay-chart label { display: flex; justify-content: space-between; margin: 14px 0 5px; color: var(--muted); font-size: 12px; }.notation-demo output,.decay-chart output { color: var(--ink); font-weight: 600; }input[type=range] { width: 100%; accent-color: var(--red); cursor: pointer; }
-.isotope-compare { display: grid; grid-template-columns: repeat(4, 1fr); align-items: start; gap: 9px; width: 100%; text-align: center; }.isotope-compare > div { display: grid; justify-items: center; gap: 8px; }.isotope-compare strong { font: 600 23px var(--serif); color: var(--ink); }.isotope-compare span { min-height: 30px; color: var(--muted); font-size: 10px; }.same-z { grid-column: 1/-1; grid-row: 2; color: var(--red); font: 10px var(--mono); letter-spacing: .09em; }.isotope-compare > div:nth-child(1) { grid-column: 1; grid-row: 1; }.isotope-compare > div:nth-child(3) { grid-column: 2; grid-row: 1; }.isotope-compare > div:nth-child(4) { grid-column: 4; grid-row: 1; }.nucleus { width: 55px; height: 55px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; border: 1px dashed #9b927f; border-radius: 50%; gap: 3px; font: 9px var(--mono); font-style: normal; }.nucleus b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(162,61,50,.12); color: var(--red); }.nucleus b:nth-child(even) { color: var(--teal); background: rgba(49,93,115,.14); }.nucleus.tiny { width: 42px; height: 42px; }
+.isotope-compare { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 9px; width: 100%; text-align: center; }
+.isotope-compare > div { display: grid; justify-items: center; gap: 8px; }
+.isotope-compare strong { color: var(--ink); font: 600 23px var(--serif); }
+.isotope-compare span { min-height: 30px; color: var(--muted); font-size: 10px; }
+.isotope-compare .same-z { grid-column: 1 / -1; grid-row: 1; color: var(--red); font: 10px var(--mono); letter-spacing: .09em; }
+.isotope-compare > div:nth-child(1) { grid-column: 1; grid-row: 2; }
+.isotope-compare > div:nth-child(3) { grid-column: 2; grid-row: 2; }
+.isotope-compare > div:nth-child(4) { grid-column: 3; grid-row: 2; }
+.nucleus { width: 55px; height: 55px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; border: 1px dashed #9b927f; border-radius: 50%; gap: 3px; font: 9px var(--mono); font-style: normal; }.nucleus b { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(162,61,50,.12); color: var(--red); }.nucleus b:nth-child(even) { color: var(--teal); background: rgba(49,93,115,.14); }.nucleus.tiny { width: 42px; height: 42px; }
+.isotope-chem { width: 100%; display: grid; justify-items: center; gap: 13px; text-align: center; }
+.isotope-chem > div { width: min(100%, 400px); display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 16px; border: 1px solid var(--rule); }
+.isotope-chem > div b { color: var(--red); font: 600 clamp(21px, 2vw, 29px) var(--serif); }
+.isotope-chem > div span { color: var(--muted); font: 12px var(--mono); }
+.isotope-chem > i { color: var(--teal); font: 11px var(--mono); font-style: normal; }
+.isotope-chem > p { margin: 4px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.isotope-chem > p strong { color: var(--red); font-size: 20px; }
 .family-board { width: 100%; max-width: 470px; }.family-equation { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 13px 5px; border-bottom: 1px solid var(--rule); }.family-equation b { color: var(--ink); font: 600 23px var(--serif); }.family-equation span { color: var(--muted); font: 10px var(--mono); text-align: center; }.average { margin-top: 15px; padding: 13px; border-left: 2px solid var(--teal); background: rgba(49,93,115,.07); color: var(--muted); font-size: 12px; }.average strong,.average small { display: block; margin-top: 5px; color: var(--ink); font: 600 18px var(--serif); }.average small { color: var(--muted); font: 10px var(--sans); }
 .scattering-figure { position: relative; width: 100%; height: 275px; display: grid; place-items: center; overflow: visible; }.scattering-figure img { width: 78%; height: 210px; object-fit: contain; filter: sepia(.35) contrast(.9); border: 1px solid var(--rule); }.scattering-figure p { margin: 7px 0 0; color: var(--muted); font: 10px var(--mono); }.scatter-paths { position: absolute; inset: 50px 5% auto; height: 125px; color: var(--red); pointer-events: none; font: 11px var(--mono); }.scatter-paths .straight { position: absolute; left: 0; right: 0; top: 48px; border-bottom: 1px dashed var(--red); }.scatter-paths .deflect { position: absolute; left: 51%; top: 12px; color: var(--teal); font-size: 28px; }.scatter-paths .return { position: absolute; left: 40%; top: 73px; color: var(--gold); }.scatter-paths b { position: absolute; left: 47%; top: 55px; padding: 2px 4px; background: var(--paper-light); color: var(--ink); font-size: 9px; }
 .history-figure { width: 100%; }.history-images { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }.history-images figure { margin: 0; min-width: 0; }.history-images img { width: 100%; height: 135px; object-fit: contain; filter: sepia(.45); border: 1px solid var(--rule); }.history-images figcaption { margin-top: 4px; color: var(--muted); font: 9px var(--mono); }.history-figure ol { display: flex; justify-content: space-between; gap: 10px; padding: 13px 0 10px; margin: 0; border-bottom: 1px solid var(--rule); list-style: none; color: var(--muted); font-size: 11px; }.history-figure ol b { display: block; color: var(--red); font: 14px var(--mono); }.history-figure > small { display: block; margin-top: 8px; color: var(--quiet); font-size: 10px; }
@@ -105,12 +120,42 @@ h1 { max-width: 950px; margin: 11px 0 0; color: var(--ink); font: 600 clamp(38px
 .activity-diagram { width: 100%; max-width: 420px; }.activity-row { display: grid; grid-template-columns: 1.1fr 1fr 1.2fr; align-items: center; gap: 8px; padding: 13px 5px; border-bottom: 1px solid var(--rule); }.activity-row b { color: var(--ink); font: 600 14px var(--serif); }.activity-row span { color: var(--red); font: 15px var(--mono); }.activity-row small { color: var(--muted); font-size: 10px; }.unit-seal { width: fit-content; margin: 18px auto 0; padding: 10px 13px; border: 1px solid var(--teal); color: var(--teal); font: 12px var(--mono); }
 .dose-diagram { width: 100%; display: grid; grid-template-columns: repeat(3,1fr); gap: 9px; }.dose-diagram > div { min-height: 145px; padding: 13px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid var(--rule); }.dose-diagram b { color: var(--red); font: 600 29px var(--serif); }.dose-diagram span { min-height: 36px; margin-top: 9px; color: var(--ink); font-size: 12px; }.dose-diagram i { width: 25px; margin: 6px; border-top: 1px solid var(--gold); }.dose-diagram small { color: var(--muted); font: 9px var(--mono); }
 .mass-diagram { display: grid; grid-template-columns: auto 24px 80px; gap: 17px; align-items: center; justify-items: center; }.free-mass { width: 95px; display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }.free-mass span { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--red); border-radius: 50%; color: var(--red); font: 11px var(--mono); }.free-mass span:nth-child(n+3) { border-color: var(--teal); color: var(--teal); }.mass-diagram > b { color: var(--muted); font: 20px var(--mono); }.bound-mass { width: 73px; height: 73px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--gold); font: 21px var(--serif); }.mass-diagram > i { grid-column: 1/-1; color: var(--red); font: italic 15px var(--serif); }.mass-diagram p { grid-column: 1/-1; color: var(--muted); font-size: 11px; }
+.atomic-mass-visual { width: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: clamp(8px, 2vw, 24px); text-align: center; }
+.atomic-mass-visual > div { min-width: 0; display: grid; justify-items: center; gap: 10px; padding: 18px 8px; border: 1px solid var(--rule); }
+.atomic-mass-visual span { color: var(--ink); font: 600 clamp(28px, 3vw, 44px) var(--serif); }
+.atomic-mass-visual b { color: var(--red); font: 600 clamp(15px, 1.4vw, 21px) var(--mono); }
+.atomic-mass-visual small { color: var(--muted); font-size: clamp(11px, 1vw, 15px); }
+.atomic-mass-visual > i { color: var(--teal); font: 26px var(--serif); }
+.chlorine-average { width: 100%; display: grid; justify-items: center; gap: 12px; text-align: center; }
+.chlorine-average > div { width: min(100%, 400px); display: grid; gap: 12px; }
+.chlorine-average > div span { display: grid; grid-template-columns: 58px 1fr 48px; align-items: center; gap: 10px; text-align: left; }
+.chlorine-average b { color: var(--ink); font: 600 18px var(--serif); }
+.chlorine-average i { height: 12px; border-radius: 8px; background: linear-gradient(90deg, var(--teal) var(--fraction), var(--rule) var(--fraction)); }
+.chlorine-average > div small { color: var(--muted); font: 12px var(--mono); }
+.chlorine-average > p { margin: 8px 0 0; color: var(--muted); font: 14px var(--mono); }
+.chlorine-average > strong { color: var(--teal); font: 600 32px var(--serif); }
+.chlorine-average > small { color: var(--muted); font-size: 12px; line-height: 1.4; }
 .helium-work { width: 100%; max-width: 410px; }.mass-line { display: flex; justify-content: space-between; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--rule); color: var(--muted); font: 12px var(--mono); }.mass-line b { color: var(--ink); }.mass-difference { padding: 13px 0; color: var(--red); font: 15px var(--mono); }.energy-result { padding: 13px; background: rgba(49,93,115,.09); color: var(--ink); font: 14px var(--serif); }.energy-result strong { color: var(--gold); font-size: 24px; }.helium-work > small { display: block; margin-top: 10px; color: var(--muted); font-size: 10px; }
 .binding-curve { width: 100%; }.binding-curve .binding-fill { fill: rgba(49,93,115,.12); }.binding-curve .binding-line { fill: none; stroke: var(--teal); stroke-width: 3; }.binding-curve svg text:nth-of-type(4) { fill: var(--red); }.binding-curve p { margin: 3px 0; color: var(--muted); text-align: center; font: 11px var(--mono); }
 .fission-diagram { width: 100%; display: grid; grid-template-columns: 1fr auto 1.4fr; align-items: center; gap: 12px; }.nucleus-large,.fragments b { min-height: 73px; display: grid; place-items: center; padding: 8px; border: 1px solid var(--red); border-radius: 50%; color: var(--red); font: 15px var(--serif); text-align: center; }.reaction-arrow { color: var(--gold); font-size: 23px; }.fragments { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }.fragments b { min-height: 58px; border-color: var(--teal); color: var(--teal); }.fragments small { grid-column: 1/-1; color: var(--muted); text-align: center; font: 10px var(--mono); }.variable-products { grid-column: 1/-1; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); text-align: center; font-size: 11px; }
 .chain-diagram { width: 100%; max-width: 430px; display: grid; grid-template-columns: 1fr 1fr; justify-items: center; align-items: center; gap: 12px; }.chain-node { width: 92px; height: 92px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--ink); text-align: center; font: 12px var(--serif); }.chain-arrows { grid-column: 1/-1; color: var(--red); font: 20px var(--mono); letter-spacing: 18px; }.chain-arrows span { font-size: 10px; }.small-node { width: 68px; height: 68px; border-color: var(--teal); }.chain-footer { grid-column: 1/-1; color: var(--muted); text-align: center; font: 10px var(--mono); }
 .fusion-diagram { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; }.fusion-diagram > div { width: 55px; height: 55px; display: grid; place-items: center; border: 1px solid var(--teal); border-radius: 50%; color: var(--teal); font: 17px var(--serif); }.fusion-diagram > b,.fusion-diagram > i { color: var(--gold); font: 18px var(--serif); }.fusion-diagram > span { width: 100%; color: var(--gold); text-align: center; font: 13px var(--mono); }.fusion-diagram > small { flex-basis: 100%; margin-top: 25px; color: var(--muted); text-align: center; font-size: 11px; }
 .pet-diagram { width: 100%; text-align: center; }.annihilation-equation { display: flex; justify-content: center; align-items: center; gap: 13px; color: var(--muted); font: 14px var(--mono); }.annihilation-equation b { color: var(--red); font-size: 22px; }.annihilation-equation strong { color: var(--gold); font-weight: 400; }.photons { margin: 22px 0; color: var(--teal); font: 12px var(--mono); }.photons i { margin: 0 13px; font-style: normal; }.pet-ring { width: 128px; height: 128px; margin: 0 auto; display: grid; place-items: center; border: 1px dashed var(--teal); border-radius: 50%; position: relative; color: var(--red); }.pet-ring::before,.pet-ring::after { content: ''; position: absolute; inset: 15px; border: 1px solid rgba(49,93,115,.25); border-radius: 50%; }.pet-ring span { position: absolute; top: -4px; color: var(--muted); font: 9px var(--mono); }.pet-ring b { font-size: 23px; }.pet-diagram > small { display: block; margin-top: 13px; color: var(--muted); font-size: 10px; }
+.antimatter-visual { width: 100%; display: grid; justify-items: center; gap: 15px; text-align: center; }
+.particle-pair, .photon-pair { display: flex; align-items: center; justify-content: center; gap: clamp(12px, 2vw, 26px); }
+.particle-pair > span { width: clamp(72px, 8vw, 110px); height: clamp(72px, 8vw, 110px); display: grid; align-content: center; justify-items: center; gap: 5px; border: 1px solid var(--red); border-radius: 50%; color: var(--red); font: 600 25px var(--mono); }
+.particle-pair > span small { color: var(--muted); font: 12px var(--sans); }
+.particle-pair > b, .antimatter-visual > i { color: var(--muted); font: 18px var(--mono); }
+.photon-pair { color: var(--teal); }
+.photon-pair b { font: 600 27px var(--mono); }
+.photon-pair span { font-size: 13px; }
+.antimatter-visual > small { color: var(--muted); font-size: 12px; }
+.density-worked { width: 100%; display: grid; grid-template-columns: 1fr; justify-items: center; gap: 12px; text-align: center; }
+.density-worked > div { width: min(100%, 290px); display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; border: 1px solid var(--rule); }
+.density-worked > div b { color: var(--red); font: 600 22px var(--mono); }
+.density-worked > div span, .density-worked > i, .density-worked > small { color: var(--muted); font-size: 12px; }
+.density-worked > i { font-style: normal; text-align: center; }
+.density-worked > strong { color: var(--teal); font: 600 clamp(17px, 1.5vw, 23px) var(--mono); }
 .application-map { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }.app-node { min-height: 100px; padding: 13px; border-left: 2px solid var(--teal); background: rgba(49,93,115,.06); display: flex; flex-direction: column; justify-content: center; }.app-node:nth-child(2n) { border-color: var(--red); background: rgba(162,61,50,.045); }.app-node b { color: var(--ink); font: 600 17px var(--serif); }.app-node span { margin-top: 6px; color: var(--muted); font-size: 11px; }
 .worked-diagram { width: 100%; max-width: 430px; }.worked-step { display: flex; justify-content: space-between; gap: 10px; padding: 14px 10px; border-bottom: 1px solid var(--rule); color: var(--muted); font: 12px var(--mono); }.worked-step b { color: var(--red); font-weight: 400; }.worked-step span { color: var(--ink); }.final-step { background: rgba(49,93,115,.08); }
 
@@ -759,6 +804,14 @@ h1 {
 .worked-step { min-height: 78px; padding: 14px; }
 .worked-step b { font-size: 17px; }
 .worked-step span { font-size: clamp(16px, 1.3vw, 21px); }
+.density-worked > div { width: min(100%, 430px); padding: 14px 18px; }
+.density-worked > div b { font-size: 30px; }
+.density-worked > div span, .density-worked > i, .density-worked > small { font-size: clamp(14px, 1vw, 17px); }
+.antimatter-visual > small { font-size: clamp(14px, 1vw, 17px); }
+.particle-pair > span { width: clamp(100px, 9vw, 145px); height: clamp(100px, 9vw, 145px); font-size: 34px; }
+.particle-pair > span small { font-size: 15px; }
+.photon-pair b { font-size: 36px; }
+.photon-pair span { font-size: 17px; }
 .conclusion-map { width: 100%; max-width: 1000px; }
 .conclusion-map > div { min-height: 150px; padding: 18px; }
 .conclusion-map b { font-size: 21px; }
@@ -986,6 +1039,21 @@ h1 {
   .mass-diagram > b { font-size: 30px; }
   .mass-diagram > i { font-size: 20px; }
   .mass-diagram p { font-size: 14px; text-align: center; }
+  .atomic-mass-visual { gap: 6px; }
+  .atomic-mass-visual > div { gap: 7px; padding: 12px 5px; }
+  .atomic-mass-visual small { font-size: 11px; }
+  .chlorine-average > div span { grid-template-columns: 48px 1fr 40px; gap: 7px; }
+  .chlorine-average > p { font-size: 12px; }
+  .chlorine-average > strong { font-size: 28px; }
+  .chlorine-average > small { font-size: 11px; }
+  .density-worked > div { padding: 10px 12px; }
+  .density-worked > div b { font-size: 24px; }
+  .density-worked > div span, .density-worked > i, .density-worked > small { font-size: 11px; }
+  .density-worked > strong { font-size: 15px; }
+  .particle-pair > span { width: 82px; height: 82px; font-size: 24px; }
+  .particle-pair > span small { font-size: 11px; }
+  .photon-pair b { font-size: 27px; }
+  .antimatter-visual > small { font-size: 11px; }
 }
 
 @media (min-width: 621px) and (max-width: 900px) {
